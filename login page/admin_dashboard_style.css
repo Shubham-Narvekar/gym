@@ -1,0 +1,321 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+}
+.sidebar {
+    width: 250px;
+    background-color: #2f2f2f;
+    color: white;
+    height: 100vh;
+    padding-top: 20px;
+    position: fixed;
+    overflow-y: auto; /* Add a vertical scrollbar if the content exceeds the height */
+}
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    margin: 5px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.sidebar a:hover {
+    background-color: #575757;
+}
+.sidebar .logout {
+    margin-top: auto;
+    background-color: #e74c3c;
+}
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+}
+.dashboard-section {
+    margin-bottom: 30px;
+}
+.hidden {
+    display: none;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f4f4f4;
+}
+
+.download-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove borders */
+    padding: 10px 20px; /* Add padding */
+    font-size: 14px; /* Set font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Add pointer on hover */
+    margin: 10px 0; /* Add margin for spacing */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.download-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.download-btn:active {
+    background-color: #3e8e41; /* Even darker green when clicked */
+    transform: scale(0.98); /* Slightly shrink on click */
+}
+
+/* Form container styling */
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Target the form with a specific class */
+form.trainer-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form labels styling */
+form.trainer-form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Form input fields styling */
+form.trainer-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+/* Input focus styling */
+form.trainer-form input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Submit button styling */
+form.trainer-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+form.trainer-form button:hover {
+    background-color: #45a049;
+}
+
+/* Class Schedule Form container styling */
+form.class-schedule-form {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Class schedule labels styling */
+form.class-schedule-form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Class schedule input fields, select, and textarea styling */
+form.class-schedule-form input,
+form.class-schedule-form select,
+form.class-schedule-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+/* Input focus styling */
+form.class-schedule-form input:focus,
+form.class-schedule-form select:focus,
+form.class-schedule-form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Submit button styling */
+form.class-schedule-form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+form.class-schedule-form button:hover {
+    background-color: #45a049;
+}
+
+/* Equipment Form container styling */
+form.equipment-form {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Equipment form labels styling */
+form.equipment-form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Equipment form input fields, select, and textarea styling */
+form.equipment-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+/* Input focus styling */
+form.equipment-form input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Submit button styling */
+form.equipment-form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+form.equipment-form button:hover {
+    background-color: #45a049;
+}
+
+/* Maintenance form container */
+form.maintenance-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form labels styling */
+form.maintenance-form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Form input fields styling */
+form.maintenance-form input,
+form.maintenance-form select,
+form.maintenance-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+/* Input focus styling */
+form.maintenance-form input:focus,
+form.maintenance-form select:focus,
+form.maintenance-form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Submit button styling */
+form.maintenance-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+form.maintenance-form button:hover {
+    background-color: #45a049;
+}
+
+form.attendance-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

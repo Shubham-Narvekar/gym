@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitcore Gym - Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="login_selection_style.css">
+</head>
+<body>
+    <button class="back-button"
+        onclick="window.location.href='/gym/landing page/gym_landing.html'">
+        <i class="fas fa-arrow-left"></i> Back to Home
+    </button>
+
+    <div class="login-container">
+        <!-- Member Login Card -->
+        <div class="login-card" onclick="window.location.href='member_login.html'">
+            <i class="fas fa-user"></i>
+            <h2>Member Login</h2>
+            <p>Access your membership details, track progress, and book classes</p>
+            <button class="login-button">Login as Member</button>
+        </div>
+
+        <!-- Admin Login Card -->
+        <div class="login-card" onclick="window.location.href='admin_login.html'">
+            <i class="fas fa-user-shield"></i>
+            <h2>Admin Login</h2>
+            <p>Access administrative controls and manage gym operations</p>
+            <button class="login-button">Login as Admin</button>
+        </div>
+
+    </div>
+
+    <script src="login_selection.js"></script>
+</body>
+</html>
