@@ -55,34 +55,21 @@ The **Gym Management System** is a web-based application designed to streamline 
    ```sh
    git clone https://github.com/Shubham-Narvekar/gym.git
    ```
-2. **Navigate to the project directory**
-   ```sh
-   cd gym-management-system
-   ```
-3. **Set up the database**
+2. **Set up the database**
    - Import the provided SQL file into `phpMyAdmin`.
    - Configure database credentials in `config.php`.
 
-4. **Start a local PHP server**
+3. **Start a local PHP server**
    ```sh
    php -S localhost:8000
    ```
-5. **Open the application in your browser**
+4. **Open the application in your browser**
    ```
    http://localhost:8000
    ```
 
-## Contributing
-- Fork the repository.
-- Create a new branch (`feature-branch-name`).
-- Commit your changes.
-- Push to your branch and submit a Pull Request.
-
-## License
-This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 For any queries or support, feel free to reach out to:
 - **Developer:** Shubham Narvekar  
-- **Email:** [your-email@example.com](mailto:your-email@example.com)  
-- **GitHub:** [your-username](https://github.com/your-username)
+- **Email:** [shubhamnarvekar3011@gmail.com](mailto:shubhamnarvekar3011@gmail.com)  
