@@ -53,7 +53,7 @@ The **Gym Management System** is a web-based application designed to streamline 
 ## Installation Guide
 1. **Clone the repository**
    ```sh
-   git clone https://github.com/your-username/gym-management-system.git
+   git clone https://github.com/Shubham-Narvekar/gym.git
    ```
 2. **Navigate to the project directory**
    ```sh
